@@ -1,3 +1,3 @@
 export function Projects() {
-  return <article>Projects</article>;
+  return <article id="projects">Projects</article>;
 }

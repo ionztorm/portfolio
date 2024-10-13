@@ -1,3 +1,7 @@
 export function About() {
-  return <article>About</article>;
+  return (
+    <article id="about">
+      <p>A little something about me</p>
+    </article>
+  );
 }
