@@ -1,13 +1,18 @@
 import type { TBreakpointOptions } from "@/lib/types";
 import { useEffect, useState } from "react";
 
-const breakpoints = {
-  sm: 640,
-  md: 768,
-  lg: 1024,
-  xl: 1280,
-  "2xl": 1536,
-};
+import resolveConfig from "tailwindcss/resolveConfig";
+import tailwindConfig from "@/../tailwind.config";
+
+const twConfig = resolveConfig(tailwindConfig);
+export const twScreens = twConfig.theme.screens;
+
+const breakpoints = Object.fromEntries(
+  Object.entries(twScreens).map(([key, value]) => [
+    key,
+    parseInt(value.replace("px", ""), 10),
+  ]),
+);
 
 export function useViweport(breakpoint: TBreakpointOptions) {
   const [isMobile, setIsMobile] = useState(false);

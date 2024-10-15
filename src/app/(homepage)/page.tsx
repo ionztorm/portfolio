@@ -12,13 +12,13 @@ export default function Home() {
     <Wrapper className="grid grid-rows-[auto_1fr_auto] gap-10 px-4 min-h-screen">
       <Header />
       <Main>
-        <Section>
+        <Section id="about">
           <About />
         </Section>
-        <Section>
+        <Section id="projects">
           <Projects />
         </Section>
-        <Section>
+        <Section id="contact">
           <Contact />
         </Section>
       </Main>

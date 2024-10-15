@@ -4,7 +4,7 @@ export function Projects() {
   return (
     <div>
       <SectionHeading>My Projects</SectionHeading>
-      <article id="projects">Projects</article>
+      <article>Projects</article>
     </div>
   );
 }
