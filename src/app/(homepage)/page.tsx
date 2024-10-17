@@ -14,25 +14,29 @@ export default function Home() {
 	return (
 		// <Wrapper className="grid grid-rows-[auto_1fr_auto] gap-10 px-4 min-h-screen">
 		<>
-			<Header className="px-4 py-4 border-b mb-4 bg-gray-50" />
-			<Main className="px-4 grid gap-10">
+			<Header className="px-4 py-4 border-b mb-4 bg-violet-950 shadow-sm" />
+			<Main className="grid">
 				<Section id="hero">
 					<Hero />
 				</Section>
-				<Section id="about" heading="Get to know me">
+				<Section id="about">
 					<About />
 				</Section>
 				<Section id="projects" heading="Projects">
 					<Projects />
 				</Section>
-				<Section id="stack" heading="Skills">
+				<Section id="skills" heading="Skills">
 					<Skills />
 				</Section>
-				<Section id="contact" heading="Get in touch">
+				<Section
+					id="contact"
+					heading="Get in touch"
+					className="bg-[#73daca]/50"
+				>
 					<Contact />
 				</Section>
 			</Main>
-			<Footer className="text-slate-400 text-sm flex justify-center items-center py-4 px-4 border-t bg-gray-50 mt-5" />
+			<Footer className="text-slate-200 text-sm flex justify-center items-center py-4 px-4 border-t bg-violet-950" />
 		</>
 		// </Wrapper>
 	);
