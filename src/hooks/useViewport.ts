@@ -8,28 +8,28 @@ const twConfig = resolveConfig(tailwindConfig);
 export const twScreens = twConfig.theme.screens;
 
 const breakpoints = Object.fromEntries(
-  Object.entries(twScreens).map(([key, value]) => [
-    key,
-    parseInt(value.replace("px", ""), 10),
-  ]),
+	Object.entries(twScreens).map(([key, value]) => [
+		key,
+		Number.parseInt(value.replace("px", ""), 10),
+	]),
 );
 
 export function useViweport(breakpoint: TBreakpointOptions) {
-  const [isMobile, setIsMobile] = useState(false);
+	const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < breakpoints[breakpoint]);
-    };
+	useEffect(() => {
+		const handleResize = () => {
+			setIsMobile(window.innerWidth < breakpoints[breakpoint]);
+		};
 
-    handleResize();
+		handleResize();
 
-    window.addEventListener("resize", handleResize);
+		window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, [breakpoint]);
 
-  return isMobile;
+	return isMobile;
 }
