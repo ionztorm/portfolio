@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type TLogoProps = {
 	title: string;
 	subtext?: string;
@@ -5,7 +7,9 @@ type TLogoProps = {
 export function Logo({ title, subtext }: TLogoProps) {
 	return (
 		<p className="grid">
-			<span className="text-lg sm:text-2xl lg:text-3xl font-bold">{title}</span>
+			<Link href="#">
+				<span className="text-slate-100 text-lg font-bold">{title}</span>
+			</Link>
 			{subtext && <span>{subtext}</span>}
 		</p>
 	);
