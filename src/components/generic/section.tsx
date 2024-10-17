@@ -1,4 +1,5 @@
 import { SectionHeading } from "./section-heading";
+import { Wrapper } from "./wrapper";
 
 type TSectionProps = {
 	children: React.ReactNode;
@@ -8,8 +9,10 @@ type TSectionProps = {
 export function Section({ children, id, heading }: TSectionProps) {
 	return (
 		<section id={id}>
-			{!!heading && <SectionHeading>{heading}</SectionHeading>}
-			{children}
+			<Wrapper>
+				{!!heading && <SectionHeading>{heading}</SectionHeading>}
+				{children}
+			</Wrapper>
 		</section>
 	);
 }
