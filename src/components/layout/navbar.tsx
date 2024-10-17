@@ -16,12 +16,16 @@ export function Navbar({ paths, children }: TNavbarProps) {
 	const navListSM = makeNavList(paths, "smScreen");
 
 	return (
-		<nav className="relative mb-5 py-8 border-b border-b-slate-100">
+		<nav className="relative">
 			<div className="flex items-center justify-between">
 				{children}
 
 				{/* md+ menu */}
-				{!isMobile && <ul className="hidden sm:flex gap-5">{navListLG}</ul>}
+				{!isMobile && (
+					<ul className="hidden sm:flex sm:gap-5 md:gap-12 lg:gap-20 ">
+						{navListLG}
+					</ul>
+				)}
 
 				{/* burger button */}
 				{isMobile && (
@@ -44,7 +48,7 @@ export function Navbar({ paths, children }: TNavbarProps) {
 			</div>
 			{/* mobile menu */}
 			{isMobile && isOpen && (
-				<ul className="sm:hidden absolute w-full mt-4 flex flex-col gap-4 rounded-sm shadow-lg p-5 z-10 bg-white">
+				<ul className="sm:hidden absolute w-full mt-4 flex flex-col items-center gap-4 rounded-sm shadow-lg p-5 z-10 bg-white">
 					{navListSM}
 				</ul>
 			)}
