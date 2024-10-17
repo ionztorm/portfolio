@@ -37,7 +37,7 @@ export function Navbar({ paths, children }: TNavbarProps) {
 						aria-expanded={isOpen}
 					>
 						<div
-							className={`w-6 h-0.5 bg-gray-700 transition-transform duration-300 ease-in-out before:content-[''] before:block before:absolute before:w-6 before:h-0.5 before:bg-gray-700 before:transition-transform before:duration-300 before:ease-in-out after:content-[''] after:block after:absolute after:w-6 after:h-0.5 after:bg-gray-700 after:transition-transform after:duration-300 after:ease-in-out ${
+							className={`w-6 h-0.5 bg-slate-100 transition-transform duration-300 ease-in-out before:content-[''] before:block before:absolute before:w-6 before:h-0.5 before:bg-slate-100 before:transition-transform before:duration-300 before:ease-in-out after:content-[''] after:block after:absolute after:w-6 after:h-0.5 after:bg-slate-100 after:transition-transform after:duration-300 after:ease-in-out ${
 								isOpen
 									? "rotate-45 before:rotate-90 before:-translate-y-0 after:-rotate-90 after:-translate-y-0"
 									: "before:-translate-y-2 after:translate-y-2"
@@ -48,7 +48,7 @@ export function Navbar({ paths, children }: TNavbarProps) {
 			</div>
 			{/* mobile menu */}
 			{isMobile && isOpen && (
-				<ul className="sm:hidden absolute w-full mt-4 flex flex-col items-center gap-4 rounded-sm shadow-lg p-5 z-10 bg-white">
+				<ul className="sm:hidden absolute w-full mt-4 flex flex-col items-center gap-8 rounded-sm shadow-lg p-5 z-10 bg-white">
 					{navListSM}
 				</ul>
 			)}

@@ -9,7 +9,13 @@ type TNavLinkProps = {
 
 export function NavLink({ children, path, className }: TNavLinkProps) {
 	return (
-		<Link className={cn("text-slate-700", className)} href={path}>
+		<Link
+			className={cn(
+				"text-slate-700 sm:text-slate-100 font-semibold hover:bg-violet-500 hover:text-white rounded-lg transition duration-400",
+				className,
+			)}
+			href={path}
+		>
 			{children}
 		</Link>
 	);
