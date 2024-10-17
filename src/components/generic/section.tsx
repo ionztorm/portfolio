@@ -7,7 +7,7 @@ type TSectionProps = {
 };
 export function Section({ children, id, heading }: TSectionProps) {
 	return (
-		<section id={id} className="max-w-3xl">
+		<section id={id}>
 			{!!heading && <SectionHeading>{heading}</SectionHeading>}
 			{children}
 		</section>
