@@ -2,7 +2,7 @@ import { NavLink } from "@/components/layout/nav-link";
 import type { TPath, TScreenSizes } from "@/lib/types";
 
 export function makeNavList(
-	pathList: TPath[],
+	pathList: TPath,
 	screenSize: TScreenSizes,
 ): React.ReactElement<"li">[] | null {
 	if (screenSize !== "sm" && screenSize !== "lg") return null;
@@ -12,7 +12,7 @@ export function makeNavList(
 			? "w-full flex justify-center items-center py-4"
 			: "inline-block hover:scale-105 hover:-rotate-6 transform px-4 py-2";
 
-	return pathList.map((item) => (
+	return Object.values(pathList).map((item) => (
 		<li
 			key={item.label}
 			className={screenSize === "sm" ? "w-full text-center" : ""}

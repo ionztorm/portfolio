@@ -1,4 +1,6 @@
 import { SectionHeading } from "@/components/generic/section-heading";
+import { StyledLink } from "@/components/generic/styled-link";
+import { HOMEPAGE_NAV_PATHS } from "@/lib/constants";
 
 export function About() {
 	return (
@@ -13,8 +15,9 @@ export function About() {
 				</p>
 				<p>
 					I&apos;m self taught, which has allowed me to choose the technologies
-					I have a parrion for. Check out my skills below to see what I&apos;ve
-					been spending my time on.
+					I have a parrion for. Check out my{" "}
+					<StyledLink path={HOMEPAGE_NAV_PATHS.skills} lowerCase={true} /> below
+					to see what I&apos;ve been spending my time on.
 				</p>
 				<p>
 					When I&apos;m not studying, I enjoy watching Formula 1, and have a
