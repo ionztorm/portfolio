@@ -12,8 +12,8 @@ export function Navbar({ paths, children }: TNavbarProps) {
 	const [isOpen, setIsOpen] = useState(false);
 	const isMobile = useViweport("sm");
 
-	const navListLG = makeNavList(paths, "lgScreen");
-	const navListSM = makeNavList(paths, "smScreen");
+	const navListLG = makeNavList(paths, "lg");
+	const navListSM = makeNavList(paths, "sm");
 
 	return (
 		<nav className="relative">

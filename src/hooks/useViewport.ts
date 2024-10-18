@@ -1,4 +1,4 @@
-import type { TBreakpointOptions } from "@/lib/types";
+import type { TScreenSizes } from "@/lib/types";
 import { useEffect, useState } from "react";
 
 import resolveConfig from "tailwindcss/resolveConfig";
@@ -14,7 +14,7 @@ const breakpoints = Object.fromEntries(
 	]),
 );
 
-export function useViweport(breakpoint: TBreakpointOptions) {
+export function useViweport(breakpoint: TScreenSizes) {
 	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {
