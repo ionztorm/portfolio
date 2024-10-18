@@ -5,7 +5,7 @@ import { makeNavList } from "@/utils/makeNavList";
 
 type TNavbarProps = {
 	children: React.ReactNode;
-	paths: TPath[];
+	paths: TPath;
 };
 
 export function Navbar({ paths, children }: TNavbarProps) {
