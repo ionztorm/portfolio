@@ -11,7 +11,7 @@ export function StyledLink({ path, lowerCase }: TStyledLinkProps) {
   return (
     <Link
       href={path.path}
-      className="font-semibold text-violet-700 transform hover:scale-105 inline-block duration-300 hover:-rotate-6"
+      className="font-semibold text-teal-300 transform hover:scale-105 inline-block duration-300 hover:-rotate-6"
     >
       {label}
     </Link>

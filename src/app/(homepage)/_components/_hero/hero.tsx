@@ -1,10 +1,10 @@
 export function Hero() {
   return (
-    <div className="h-[45vh] flex flex-col gap-3">
-      <h1 className="flex flex-col justify-center gap-2 text-slate-400">
+    <div className="flex flex-col gap-3">
+      <h1 className="flex flex-col justify-center items-center gap-2 text-slate-400 text-center lg:text-left lg:items-start">
         <span>Hey, the name is</span>
         <div className="group grid max-w-max">
-          <span className="text-4xl md:text-5xl font-bold inline-block text-slate-200 transform transition  duration-300">
+          <span className="text-4xl md:text-5xl font-bold inline-block text-teal-300 transform transition  duration-300">
             Leon Lonsdale
           </span>
           {/* Underline Span */}

@@ -11,11 +11,20 @@ import { Skills } from "./_components/_skills/skills";
 export default function Home() {
   return (
     <div className="relative mx-auto min-h-[100dvh] lg:flex lg:gap-4 max-w-screen-2xl">
-      <div className="lg:w-1/2 bg-blue-950 lg:pl-20 lg:py-20 lg:sticky lg:top-0 lg:max-h-[100vh]">
-        <Header className="lg:sticky lg:top-[80px] lg:py-20 px-6 py-12 bg-blue-900 flex flex-col justify-between lg:h-full lg:rounded-lg lg:shadow-lg" />
+      <div
+        className="
+        flex items-center justify-center
+        lg:w-1/2 lg:pl-20 lg:py-20 lg:sticky lg:top-0 lg:max-h-[100vh]"
+      >
+        <Header
+          className="
+          flex flex-col items-center justify-center
+          px-6 py-12 h-[45vh]
+          lg:sticky lg:top-[80px] lg:py-20 lg:justify-between lg:h-full"
+        />
       </div>
 
-      <Main className="lg:w-1/2 grid lg:pr-20">
+      <Main className="lg:w-1/2 grid lg:pr-20 lg:py-20">
         <Section id="about">
           <About />
         </Section>
