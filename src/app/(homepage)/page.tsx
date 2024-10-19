@@ -14,7 +14,7 @@ export default function Home() {
 	return (
 		// <Wrapper className="grid grid-rows-[auto_1fr_auto] gap-10 px-4 min-h-screen">
 		<>
-			<Header className="px-4 py-4 border-b mb-4 bg-violet-950 shadow-sm" />
+			<Header className="px-4 py-2 mb-4" />
 			<Main className="grid">
 				<Section id="hero">
 					<Hero />

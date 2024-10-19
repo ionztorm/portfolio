@@ -2,18 +2,18 @@ import type { TPathItem } from "@/lib/types";
 import Link from "next/link";
 
 type TStyledLinkProps = {
-  path: TPathItem;
-  lowerCase?: boolean;
+	path: TPathItem;
+	lowerCase?: boolean;
 };
 
 export function StyledLink({ path, lowerCase }: TStyledLinkProps) {
-  const label = lowerCase ? path.label.toLowerCase() : path.label;
-  return (
-    <Link
-      href={path.path}
-      className="font-semibold text-violet-700 transform hover:scale-105 inline-block duration-300 hover:-rotate-6"
-    >
-      {label}
-    </Link>
-  );
+	const label = lowerCase ? path.label.toLowerCase() : path.label;
+	return (
+		<Link
+			href={path.path}
+			className="font-semibold text-[#73daca] transform hover:scale-105 inline-block duration-300 hover:-rotate-6"
+		>
+			{label}
+		</Link>
+	);
 }
