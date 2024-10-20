@@ -10,9 +10,9 @@ import { Section } from "@/components/ui/section";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[auto_auto_1fr_auto]">
-      <Header className="px-4 mb-10 sm:mb-14 xl:mb-20 p-6 sm:p-14" />
-      <Main>
+    <div className="grid grid-rows-[auto_1fr]">
+      <Header className="px-4 mb-10 sm:mb-14 xl:mb-20" />
+      <Main className="px-4">
         <Section id="projects">
           <Projects />
         </Section>
