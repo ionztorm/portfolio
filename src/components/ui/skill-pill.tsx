@@ -6,12 +6,12 @@ export function SkillPill({ skill, className }: TSkillPillProps) {
     <li
       key={skill.name}
       className={cn(
-        "flex items-center flex-shrink-0 border rounded-full",
+        "flex items-center flex-shrink-0 border rounded-full max-w-max",
         className
       )}
     >
       <span style={{ color: skill.brandColour }}>{skill.icon}</span>
-      <span className="text-sm md:text-base xl:text-lg">{skill.name}</span>
+      <span className="text-base md:text-md xl:text-lg">{skill.name}</span>
     </li>
   );
 }

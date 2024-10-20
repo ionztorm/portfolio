@@ -1,4 +1,5 @@
 import type { twScreens } from "@/hooks/useViewport";
+import type { StaticImageData } from "next/image";
 import type { PropsWithChildren } from "react";
 
 // paths
@@ -12,6 +13,16 @@ export type TSkill = { name: string; icon?: JSX.Element; brandColour?: string };
 export type TSkills = Record<string, TSkill>;
 export type TSkillPillProps = Readonly<{ skill: TSkill; className?: string }>;
 
+// projects
+
+export type TProject = {
+  title: string;
+  image: StaticImageData;
+  overview: string;
+  skills: TSkills;
+};
+export type TProjects = Record<string, TProject>;
+
 // react types
 
 export type TChildrenProps = Readonly<PropsWithChildren>;
@@ -22,6 +33,7 @@ export type TScreenSizes = keyof typeof twScreens;
 
 // component props
 
+export type TProjectProps = Readonly<{ project: TProject }>;
 export type TIconProps = Readonly<{ className?: string }>;
 export type TLogoProps = Readonly<{ title: string; subtext?: string }>;
 export type TSectionHeadingProps = TChildrenProps;
