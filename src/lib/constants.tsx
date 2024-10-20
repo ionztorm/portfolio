@@ -27,28 +27,55 @@ export const SOCIAL_LINKS: TPaths = {
 
 const iconClasses = "size-6";
 export const SKILLS: TSkills = {
-  html: { name: "HTML5", icon: <RiHtml5Fill className={iconClasses} /> },
-  css: { name: "CSS", icon: <SiCss3 className={iconClasses} /> },
+  html: {
+    name: "HTML5",
+    icon: <RiHtml5Fill className={iconClasses} />,
+    brandColour: "#f06529",
+  },
+  css: {
+    name: "CSS",
+    icon: <SiCss3 className={iconClasses} />,
+    brandColour: "#2965f1",
+  },
   tailwind: {
     name: "TailwindCSS",
     icon: <RiTailwindCssFill className={iconClasses} />,
+    brandColour: "#44a8b3",
   },
-  sass: { name: "SaSS", icon: <DiSass className={iconClasses} /> },
+  sass: {
+    name: "SaSS",
+    icon: <DiSass className={iconClasses} />,
+    brandColour: "#cc6699",
+  },
   javascript: {
     name: "JavaScript",
     icon: <RiJavascriptFill className={iconClasses} />,
+    brandColour: "#F0DB4F",
   },
   typescript: {
     name: "TypeScript",
     icon: <BiLogoTypescript className={iconClasses} />,
+    brandColour: "#2f75c1",
   },
   reactjs: {
     name: "React JS",
     icon: <RiReactjsFill className={iconClasses} />,
+    brandColour: "#18d3f8",
   },
   nextjs: { name: "Next JS", icon: <RiNextjsFill className={iconClasses} /> },
   convex: { name: "Convex", icon: <ConvexIcon className={iconClasses} /> },
-  express: { name: "ExpressJS", icon: <SiExpress className={iconClasses} /> },
-  mongodb: { name: "Mongo DB", icon: <DiMongodb className={iconClasses} /> },
-  golang: { name: "GoLang", icon: <BiLogoGoLang className={iconClasses} /> },
+  express: {
+    name: "ExpressJS",
+    icon: <SiExpress className={iconClasses} />,
+  },
+  mongodb: {
+    name: "Mongo DB",
+    icon: <DiMongodb className={iconClasses} />,
+    brandColour: "#69a747",
+  },
+  golang: {
+    name: "GoLang",
+    icon: <BiLogoGoLang className={iconClasses} />,
+    brandColour: "#13a7d1",
+  },
 };

@@ -1,4 +1,3 @@
-import { SectionHeading } from "@/components/generic/section-heading";
 import { SKILLS } from "@/lib/constants";
 
 export function Skills() {
@@ -10,8 +9,10 @@ export function Skills() {
             key={skill.name}
             className="flex items-center gap-2 flex-shrink-0 border rounded-full px-3 py-1"
           >
-            <span>{skill.icon}</span>
-            <span>{skill.name}</span>
+            <span style={{ color: skill.brandColour }}>{skill.icon}</span>
+            <span className="text-sm md:text-base xl:text-lg">
+              {skill.name}
+            </span>
           </li>
         ))}
       </ul>
