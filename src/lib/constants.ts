@@ -1,4 +1,4 @@
-import type { TPaths } from "./types";
+import type { TPaths, TSkills } from "./types";
 
 export const HOMEPAGE_NAV_PATHS: TPaths = {
   about: { path: "#about", label: "About", icon: "" },
@@ -12,4 +12,19 @@ export const SOCIAL_LINKS: TPaths = {
   X: { path: "", label: "X", icon: "" },
   instagram: { path: "", label: "instagram", icon: "" },
   discord: { path: "", label: "Discord", icon: "" },
+};
+
+export const SKILLS: TSkills = {
+	html: { name: "HTML", icon: "" },
+	css: { name: "CSS", icon: "" },
+	tailwind: { name: "TailwindCSS", icon: "" },
+	sass: { name: "SaSS", icon: "" },
+	javascript: { name: "JavaScript", icon: "" },
+	typescript: { name: "TypeScript", icon: "" },
+	reactjs: { name: "React JS", icon: "" },
+	nextjs: { name: "Next JS", icon: "" },
+	convex: { name: "Convex", icon: "" },
+	express: { name: "ExpressJS", icon: "" },
+	mongodb: { name: "Mongo DB", icon: "" },
+	golang: { name: "GoLang", icon: "" },
 };
