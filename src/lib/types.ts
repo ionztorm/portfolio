@@ -22,7 +22,7 @@ export type TScreenSizes = keyof typeof twScreens;
 
 // component props
 
-export type TConvexIconProps = Readonly<{ className?: string }>;
+export type TIconProps = Readonly<{ className?: string }>;
 export type TLogoProps = Readonly<{ title: string; subtext?: string }>;
 export type TSectionHeadingProps = TChildrenProps;
 export type TSectionProps = Readonly<{

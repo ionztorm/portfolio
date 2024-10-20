@@ -1,6 +1,6 @@
-import type { TConvexIconProps } from "@/lib/types";
+import type { TIconProps } from "@/lib/types";
 
-export function ConvexIcon({ className }: TConvexIconProps) {
+export function ConvexIcon({ className }: TIconProps) {
   return (
     <svg
       className={className}
