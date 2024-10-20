@@ -1,4 +1,4 @@
-import { SkillPill } from "@/components/generic/skill-pill";
+import { SkillPill } from "@/components/ui/skill-pill";
 import { SKILLS } from "@/lib/constants";
 
 export function Skills() {

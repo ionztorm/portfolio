@@ -6,8 +6,7 @@ import { About } from "@/app/(homepage)/_components/_about/about";
 import { Projects } from "@/app/(homepage)/_components/_projects/projects";
 import { Contact } from "@/app/(homepage)/_components/_contact/contact";
 
-import { Section } from "@/components/generic/section";
-import { Skills } from "./_components/_skills/skills";
+import { Section } from "@/components/ui/section";
 
 export default function Home() {
   return (

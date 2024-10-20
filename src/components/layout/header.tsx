@@ -1,6 +1,6 @@
 import { Hero } from "@/app/(homepage)/_components/_hero/hero";
 import type { THeaderProps } from "@/lib/types";
-import { Wrapper } from "../generic/wrapper";
+import { Wrapper } from "../ui/wrapper";
 import { ConvexIcon } from "../icon/convex";
 import { Skills } from "@/app/(homepage)/_components/_skills/skills";
 

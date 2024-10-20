@@ -1,5 +1,5 @@
-import { SectionHeading } from "@/components/generic/section-heading";
-import { StyledLink } from "@/components/generic/styled-link";
+import { SectionHeading } from "@/components/ui/section-heading";
+import { StyledLink } from "@/components/ui/styled-link";
 import { HOMEPAGE_NAV_PATHS } from "@/lib/constants";
 
 export function About() {
