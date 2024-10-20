@@ -5,11 +5,13 @@ import {
   RiTailwindCssFill,
   RiReactjsFill,
   RiNextjsFill,
+  RiNodejsFill,
 } from "react-icons/ri";
 import { BiLogoTypescript, BiLogoGoLang } from "react-icons/bi";
 import { SiCss3, SiExpress } from "react-icons/si";
 import { DiSass, DiMongodb } from "react-icons/di";
 import { ConvexIcon } from "@/components/icon/convex";
+import { BunIcon } from "@/components/icon/bun";
 
 export const HOMEPAGE_NAV_PATHS: TPaths = {
   about: { path: "#about", label: "About", icon: "" },
@@ -77,5 +79,14 @@ export const SKILLS: TSkills = {
     name: "GoLang",
     icon: <BiLogoGoLang className={iconClasses} />,
     brandColour: "#13a7d1",
+  },
+  node: {
+    name: "Node JS",
+    icon: <RiNodejsFill className={iconClasses} />,
+    brandColour: "#6cc24a",
+  },
+  bun: {
+    name: "Bun JS",
+    icon: <BunIcon className={iconClasses} />,
   },
 };
