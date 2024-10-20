@@ -1,8 +1,8 @@
-import type { TPathItem } from "@/lib/types";
+import type { TPath } from "@/lib/types";
 import Link from "next/link";
 
 type TStyledLinkProps = {
-	path: TPathItem;
+	path: TPath;
 	lowerCase?: boolean;
 };
 
