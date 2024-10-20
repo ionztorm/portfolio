@@ -1,12 +1,15 @@
 "use client";
 
+import { SectionHeading } from "@/components/generic/section-heading";
+
 export function Contact() {
 	const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 	};
 
 	return (
-		<div className="border border-slate-300">
+		<>
+			<SectionHeading>Get in touch</SectionHeading>
 			<form onSubmit={(e) => onSubmit(e)} className="flex flex-col">
 				<label htmlFor="name">Name</label>
 				<input
@@ -35,6 +38,6 @@ export function Contact() {
 				/>
 				<button type="submit">Send</button>
 			</form>
-		</div>
+		</>
 	);
 }

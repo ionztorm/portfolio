@@ -1,7 +1,12 @@
+import { SectionHeading } from "@/components/generic/section-heading";
+
 export function Skills() {
 	return (
-		<article>
-			<p>Skills</p>
-		</article>
+		<>
+			<SectionHeading>Skills</SectionHeading>
+			<article>
+				<p>Skills</p>
+			</article>
+		</>
 	);
 }

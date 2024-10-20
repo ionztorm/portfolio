@@ -1,7 +1,12 @@
+import { SectionHeading } from "@/components/generic/section-heading";
+
 export function Projects() {
 	return (
-		<div>
-			<article>Projects</article>
-		</div>
+		<>
+			<SectionHeading>Projects</SectionHeading>
+			<div>
+				<article>Projects</article>
+			</div>
+		</>
 	);
 }
