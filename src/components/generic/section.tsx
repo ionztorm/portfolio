@@ -1,15 +1,16 @@
 import { cn } from "@/utils/cn";
-import { SectionHeading } from "./section-heading";
-import { Wrapper } from "./wrapper";
 import type { TSectionProps } from "@/lib/types";
 
-export function Section({ children, id, heading, className }: TSectionProps) {
-  return (
-    <section id={id} className={cn("py-24 px-4", className)}>
-      <Wrapper className="grid gap-4">
-        {!!heading && <SectionHeading>{heading}</SectionHeading>}
-        {children}
-      </Wrapper>
-    </section>
-  );
+export function Section({ children, id, className }: TSectionProps) {
+	return (
+		<section
+			id={id}
+			className={cn(
+				"mb-10 sm:mb-14 xl:mb-20 px-4 mx-auto max-w-5xl ",
+				className,
+			)}
+		>
+			{children}
+		</section>
+	);
 }
