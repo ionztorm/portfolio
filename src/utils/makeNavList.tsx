@@ -3,14 +3,14 @@ import type { TPaths, TScreenSizes } from "@/lib/types";
 
 export function makeNavList(
   pathList: TPaths,
-  screenSize: TScreenSizes,
+  screenSize: TScreenSizes
 ): React.ReactElement<"li">[] | null {
   if (screenSize !== "sm" && screenSize !== "lg") return null;
 
   const className =
     screenSize === "sm"
-      ? "w-full flex justify-center items-center py-4"
-      : "inline-block hover:scale-105 hover:-rotate-6 transform px-4 py-2";
+      ? "w-full flex justify-center items-center"
+      : "inline-block hover:scale-105 hover:-rotate-6 transform px-4";
 
   return Object.values(pathList).map((item) => (
     <li
