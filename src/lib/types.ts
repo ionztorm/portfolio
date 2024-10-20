@@ -10,6 +10,7 @@ export type TPaths = Record<string, TPath>;
 
 export type TSkill = { name: string; icon?: JSX.Element; brandColour?: string };
 export type TSkills = Record<string, TSkill>;
+export type TSkillPillProps = Readonly<{ skill: TSkill; className?: string }>;
 
 // react types
 
