@@ -20,6 +20,7 @@ export function Project({ project }: TProjectProps) {
             key={skill.name}
             skill={skill}
             className="px-2 py-1 gap-1"
+            kind="projects"
           />
         ))}
       </ul>
