@@ -8,7 +8,7 @@ import {
   RiNodejsFill,
 } from "react-icons/ri";
 import { BiLogoTypescript, BiLogoGoLang } from "react-icons/bi";
-import { SiCss3, SiExpress } from "react-icons/si";
+import { SiCss3, SiExpress, SiShadcnui } from "react-icons/si";
 import { DiSass, DiMongodb } from "react-icons/di";
 import { ConvexIcon } from "@/components/icon/convex";
 import { BunIcon } from "@/components/icon/bun";
@@ -88,6 +88,10 @@ export const SKILLS: TSkills = {
   bun: {
     name: "Bun JS",
     icon: BunIcon,
+  },
+  shadcn: {
+    name: "Shadcn",
+    icon: SiShadcnui,
   },
 };
 export const PROJECTS: TProjects = [
