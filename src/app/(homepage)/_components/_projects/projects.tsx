@@ -7,7 +7,7 @@ export function Projects() {
   return (
     <>
       <SectionHeading>Projects</SectionHeading>
-      <div className="grid gap-3 md:grid-cols-3">
+      <div className="grid gap-4 md:grid-cols-3">
         {PROJECTS.map((project) => (
           <Project key={project.title} project={project} />
         ))}
