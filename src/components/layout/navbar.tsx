@@ -3,6 +3,7 @@ import { useState } from "react";
 import type { TPaths } from "@/lib/types";
 import { makeNavList } from "@/utils/makeNavList";
 import { Wrapper } from "../ui/wrapper";
+import { BurgerButton } from "../ui/burger-button";
 
 type TNavbarProps = {
   children: React.ReactNode;
@@ -30,23 +31,7 @@ export function Navbar({ paths, children }: TNavbarProps) {
           )}
 
           {/* burger button */}
-          {isMobile && (
-            <button
-              type="button"
-              onClick={() => setIsOpen(!isOpen)}
-              className="relative w-8 h-8 flex items-center justify-center group sm:hidden"
-              aria-label="Toggle Menu"
-              aria-expanded={isOpen}
-            >
-              <div
-                className={`w-6 h-0.5 bg-slate-900 transition-transform duration-300 ease-in-out before:content-[''] before:block before:absolute before:w-6 before:h-0.5 before:bg-slate-900 before:transition-transform before:duration-300 before:ease-in-out after:content-[''] after:block after:absolute after:w-6 after:h-0.5 after:bg-slate-900 after:transition-transform after:duration-300 after:ease-in-out ${
-                  isOpen
-                    ? "rotate-45 before:rotate-90 before:-translate-y-0 after:-rotate-90 after:-translate-y-0"
-                    : "before:-translate-y-2 after:translate-y-2"
-                }`}
-              />
-            </button>
-          )}
+          {isMobile && <BurgerButton onClick={setIsOpen} isOpen={isOpen} />}
         </div>
         {/* mobile menu */}
         {isMobile && isOpen && (
