@@ -15,9 +15,14 @@ export type TSkills = Record<string, TSkill>;
 export type TSkillPillProps = Readonly<{
   skill: TSkill;
   className?: string;
-  kind: TSkillPillKind;
+  variant?: TSkillPillVariant;
 }>;
-export type TSkillPillKind = "skills" | "projects";
+export type TSkillPillVariant = "skills" | "projects" | "hero";
+export type TSkillListProps = {
+  variant: TSkillPillVariant;
+  className: string;
+  skills: TSkills;
+};
 
 // projects
 
