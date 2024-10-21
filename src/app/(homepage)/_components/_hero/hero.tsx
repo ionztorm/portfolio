@@ -10,8 +10,10 @@ export function Hero() {
       <span className="h-1 bg-violet-500 w-0 transition-all duration-500 group-hover:w-full" />
 
       <span className="text-center text-sm">
-        with a passion for clean, responsive, data driven interfaces.
+        with a passion for clean, responsive, data driven interfaces
       </span>
+
+      <span className="font-semibold">using</span>
     </h1>
   );
 }
