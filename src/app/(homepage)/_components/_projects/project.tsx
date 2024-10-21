@@ -1,4 +1,5 @@
 import { SkillList } from "@/components/ui/skill-list";
+import { StyledLink } from "@/components/ui/styled-link";
 import type { TProjectProps } from "@/lib/types";
 import Image from "next/image";
 
@@ -14,9 +15,15 @@ export function Project({ project }: TProjectProps) {
         />
       </div>
       <p className="px-2 py-2">{project.overview}</p>
-      <div className="border-t flex w-full justify-end gap-1 p-2 items-center">
-        <p>links</p>
-      </div>
+      {project.links && (
+        <div className="border-t flex w-full justify-end gap-1 p-2 items-center">
+          <ul className="flex gap-2">
+            {Object.values(project.links).map((link) => (
+              <StyledLink key={link.path} path={link} />
+            ))}
+          </ul>
+        </div>
+      )}
       <SkillList
         variant="projects"
         className="border-t p-2 flex gap-1 flex-wrap"
