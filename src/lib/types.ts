@@ -1,6 +1,7 @@
 import type { twScreens } from "@/hooks/useViewport";
 import type { StaticImageData } from "next/image";
 import type { PropsWithChildren } from "react";
+import type { IconType } from "react-icons";
 
 // paths
 
@@ -9,9 +10,14 @@ export type TPaths = Record<string, TPath>;
 
 // skills
 
-export type TSkill = { name: string; icon?: JSX.Element; brandColour?: string };
+export type TSkill = { name: string; icon?: IconType; brandColour?: string };
 export type TSkills = Record<string, TSkill>;
-export type TSkillPillProps = Readonly<{ skill: TSkill; className?: string }>;
+export type TSkillPillProps = Readonly<{
+  skill: TSkill;
+  className?: string;
+  kind: TSkillPillKind;
+}>;
+export type TSkillPillKind = "skills" | "projects";
 
 // projects
 
@@ -21,7 +27,7 @@ export type TProject = {
   overview: string;
   skills: TSkills;
 };
-export type TProjects = Record<string, TProject>;
+export type TProjects = TProject[];
 
 // react types
 
