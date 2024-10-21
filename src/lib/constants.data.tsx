@@ -7,11 +7,12 @@ import {
   RiNextjsFill,
   RiNodejsFill,
   RiCss3Fill,
+  RiSupabaseFill,
 } from "react-icons/ri";
 import { BiLogoTypescript, BiLogoGoLang } from "react-icons/bi";
 import { VscJson } from "react-icons/vsc";
-import { SiExpress, SiShadcnui } from "react-icons/si";
-import { DiSass, DiMongodb } from "react-icons/di";
+import { SiExpress, SiShadcnui, SiVercel } from "react-icons/si";
+import { DiSass, DiMongodb, DiPostgresql } from "react-icons/di";
 import { ConvexIcon } from "@/components/icon/convex";
 import { BunIcon } from "@/components/icon/bun";
 import vscodetheme from "@/../../public/vscodetheme.png";
@@ -99,6 +100,21 @@ export const SKILLS: TSkills = {
     name: "JSON",
     icon: VscJson,
   },
+  postgres: {
+    name: "PostgreSQL",
+    icon: DiPostgresql,
+    brandColour: "#336791",
+  },
+  supabase: {
+    name: "Supabase",
+    icon: RiSupabaseFill,
+    brandColour: "#3FCF8E",
+  },
+  vercel: {
+    name: "Vercel",
+    icon: SiVercel,
+    brandColour: "#000000",
+  },
 };
 export const PROJECTS: TProjects = [
   {
@@ -108,6 +124,16 @@ export const PROJECTS: TProjects = [
       "A dark VS Code theme using greens and purples so that your code is easy to read day and night",
     skills: {
       json: SKILLS.json,
+    },
+    links: {
+      github: {
+        path: "https://github.com/ionztorm/ionztorm-theme",
+        label: "Github",
+      },
+      url: {
+        path: "https://marketplace.visualstudio.com/items?itemName=ionztorm.ionztorm-theme",
+        label: "Marketplace",
+      },
     },
   },
   {
