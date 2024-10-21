@@ -6,9 +6,11 @@ import {
   RiReactjsFill,
   RiNextjsFill,
   RiNodejsFill,
+  RiCss3Fill,
 } from "react-icons/ri";
 import { BiLogoTypescript, BiLogoGoLang } from "react-icons/bi";
-import { SiCss3, SiExpress, SiShadcnui } from "react-icons/si";
+import { VscJson } from "react-icons/vsc";
+import { SiExpress, SiShadcnui } from "react-icons/si";
 import { DiSass, DiMongodb } from "react-icons/di";
 import { ConvexIcon } from "@/components/icon/convex";
 import { BunIcon } from "@/components/icon/bun";
@@ -36,11 +38,11 @@ export const SKILLS: TSkills = {
   },
   css: {
     name: "CSS",
-    icon: SiCss3,
+    icon: RiCss3Fill,
     brandColour: "#2965f1",
   },
   tailwind: {
-    name: "TailwindCSS",
+    name: "Tailwind",
     icon: RiTailwindCssFill,
     brandColour: "#44a8b3",
   },
@@ -93,6 +95,10 @@ export const SKILLS: TSkills = {
     name: "Shadcn",
     icon: SiShadcnui,
   },
+  json: {
+    name: "JSON",
+    icon: VscJson,
+  },
 };
 export const PROJECTS: TProjects = [
   {
@@ -101,7 +107,7 @@ export const PROJECTS: TProjects = [
     overview:
       "A dark VS Code theme using greens and purples so that your code is easy to read day and night",
     skills: {
-      javascript: SKILLS.javascript,
+      json: SKILLS.json,
     },
   },
   {
@@ -113,6 +119,7 @@ export const PROJECTS: TProjects = [
       nextjs: SKILLS.nextjs,
       convex: SKILLS.convex,
       typescript: SKILLS.typescript,
+      tailwind: SKILLS.tailwind,
     },
   },
   {
@@ -123,6 +130,7 @@ export const PROJECTS: TProjects = [
     skills: {
       nextjs: SKILLS.nextjs,
       javascript: SKILLS.javascript,
+      tailwind: SKILLS.tailwind,
     },
   },
   {
