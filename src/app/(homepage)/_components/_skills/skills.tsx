@@ -1,21 +1,17 @@
-import { SkillPill } from "@/components/ui/skill-pill";
+import { SectionHeading } from "@/components/ui/section-heading";
+import { SkillList } from "@/components/ui/skill-list";
 import { SKILLS } from "@/lib/constants.data";
 
 export function Skills() {
   return (
     <>
-      <ul
-        id="#skills"
+      <SectionHeading>Skills</SectionHeading>
+
+      <SkillList
+        variant="skills"
         className="mx-auto flex items-center justify-center gap-2 md:gap-4 flex-wrap px-10 py-4"
-      >
-        {Object.values(SKILLS).map((skill) => (
-          <SkillPill
-            skill={skill}
-            key={skill.name}
-            className="gap-2 border px-3 py-1 hover:scale-110 transition duration-300"
-          />
-        ))}
-      </ul>
+        skills={SKILLS}
+      />
     </>
   );
 }

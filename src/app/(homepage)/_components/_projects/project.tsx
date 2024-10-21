@@ -1,4 +1,4 @@
-import { SkillPill } from "@/components/ui/skill-pill";
+import { SkillList } from "@/components/ui/skill-list";
 import type { TProjectProps } from "@/lib/types";
 import Image from "next/image";
 
@@ -17,16 +17,11 @@ export function Project({ project }: TProjectProps) {
       <div className="border-t flex w-full justify-end gap-1 p-2 items-center">
         <p>links</p>
       </div>
-      <ul className="border-t p-2 flex gap-1 flex-wrap">
-        {Object.values(project.skills).map((skill) => (
-          <SkillPill
-            key={skill.name}
-            skill={skill}
-            className="py-1 px-2 gap-1"
-            kind="projects"
-          />
-        ))}
-      </ul>
+      <SkillList
+        variant="projects"
+        className="border-t p-2 flex gap-1 flex-wrap"
+        skills={project.skills}
+      />
     </article>
   );
 }
