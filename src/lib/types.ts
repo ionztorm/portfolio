@@ -31,6 +31,7 @@ export type TProject = {
   image: StaticImageData;
   overview: string;
   skills: TSkills;
+  links?: TPaths;
 };
 export type TProjects = TProject[];
 
