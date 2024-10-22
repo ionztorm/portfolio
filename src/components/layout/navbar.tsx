@@ -18,7 +18,7 @@ export function Navbar({ paths, children }: TNavbarProps) {
   const navListSM = makeNavList(paths, "sm");
 
   return (
-    <nav className="relative px-4 py-5 bg-slate-50 lg:sticky lg:top-0 lg:z-10 mb-10 sm:mb-14 xl:mb-20">
+    <nav className="relative px-4 py-5 bg-slate-50 sm:sticky sm:top-0 sm:z-10 mb-10 sm:mb-14 xl:mb-20">
       <Wrapper>
         <div className="flex items-center justify-between text-xl">
           {children}
