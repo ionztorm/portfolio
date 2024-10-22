@@ -46,6 +46,7 @@ export const SKILLS: TSkills = {
     name: "Tailwind",
     icon: RiTailwindCssFill,
     brandColour: "#44a8b3",
+    tag: ["hero"],
   },
   sass: {
     name: "SaSS",
@@ -56,19 +57,22 @@ export const SKILLS: TSkills = {
     name: "JavaScript",
     icon: RiJavascriptFill,
     brandColour: "#F0DB4F",
+    tag: ["hero"],
   },
   typescript: {
     name: "TypeScript",
     icon: BiLogoTypescript,
     brandColour: "#2f75c1",
+    tag: ["hero"],
   },
   reactjs: {
     name: "React JS",
     icon: RiReactjsFill,
     brandColour: "#18d3f8",
+    tag: ["hero"],
   },
-  nextjs: { name: "Next JS", icon: RiNextjsFill },
-  convex: { name: "Convex", icon: ConvexIcon },
+  nextjs: { name: "Next JS", icon: RiNextjsFill, tag: ["hero"] },
+  convex: { name: "Convex", icon: ConvexIcon, tag: ["hero"] },
   express: {
     name: "ExpressJS",
     icon: SiExpress,
@@ -91,10 +95,12 @@ export const SKILLS: TSkills = {
   bun: {
     name: "Bun JS",
     icon: BunIcon,
+    tag: ["hero"],
   },
   shadcn: {
     name: "Shadcn",
     icon: SiShadcnui,
+    tag: ["hero"],
   },
   json: {
     name: "JSON",
@@ -114,6 +120,7 @@ export const SKILLS: TSkills = {
     name: "Vercel",
     icon: SiVercel,
     brandColour: "#000000",
+    tag: ["hero"],
   },
 };
 export const PROJECTS: TProjects = [

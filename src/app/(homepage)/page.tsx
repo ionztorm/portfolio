@@ -2,9 +2,7 @@
 import { Header } from "@/components/layout/header";
 import { Main } from "@/components/layout/main";
 
-import { About } from "@/app/(homepage)/_components/_about/about";
 import { Projects } from "@/app/(homepage)/_components/_projects/projects";
-import { Contact } from "@/app/(homepage)/_components/_contact/contact";
 
 import { Section } from "@/components/ui/section";
 import { Skills } from "./_components/_skills/skills";
@@ -20,12 +18,12 @@ export default function Home() {
         <Section id="skills">
           <Skills />
         </Section>
-        <Section id="about">
+        {/* <Section id="about">
           <About />
         </Section>
         <Section id="contact">
           <Contact />
-        </Section>
+        </Section> */}
       </Main>
     </div>
   );

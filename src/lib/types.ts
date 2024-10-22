@@ -10,7 +10,12 @@ export type TPaths = Record<string, TPath>;
 
 // skills
 
-export type TSkill = { name: string; icon?: IconType; brandColour?: string };
+export type TSkill = {
+  name: string;
+  icon?: IconType;
+  brandColour?: string;
+  tag?: string[];
+};
 export type TSkills = Record<string, TSkill>;
 export type TSkillPillProps = Readonly<{
   skill: TSkill;
@@ -22,6 +27,7 @@ export type TSkillListProps = {
   variant: TSkillPillVariant;
   className: string;
   skills: TSkills;
+  tag?: string;
 };
 
 // projects
