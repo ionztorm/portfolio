@@ -2,7 +2,7 @@ import { cn } from "@/utils/cn";
 import Link from "next/link";
 import type { TNavLinkProps } from "@/lib/types";
 
-export function NavLink({ children, path, className }: TNavLinkProps) {
+export function NavLink({ children, path, className, onClick }: TNavLinkProps) {
   return (
     <Link
       className={cn(
@@ -10,6 +10,7 @@ export function NavLink({ children, path, className }: TNavLinkProps) {
         className
       )}
       href={path}
+      onClick={onClick}
     >
       {children}
     </Link>

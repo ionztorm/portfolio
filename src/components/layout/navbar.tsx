@@ -14,8 +14,10 @@ export function Navbar({ paths, children }: TNavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const isMobile = useViweport("sm");
 
+  const onCloseMenu = () => setIsOpen(false);
+
   const navListLG = makeNavList(paths, "lg");
-  const navListSM = makeNavList(paths, "sm");
+  const navListSM = makeNavList(paths, "sm", onCloseMenu);
 
   return (
     <nav className="relative px-4 py-5 bg-slate-50 sm:sticky sm:top-0 sm:z-10 mb-10 sm:mb-14 xl:mb-20">

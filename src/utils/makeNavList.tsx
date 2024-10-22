@@ -3,7 +3,8 @@ import type { TPaths, TScreenSizes } from "@/lib/types";
 
 export function makeNavList(
   pathList: TPaths,
-  screenSize: TScreenSizes
+  screenSize: TScreenSizes,
+  onClick?: () => void
 ): React.ReactElement<"li">[] | null {
   if (screenSize !== "sm" && screenSize !== "lg") return null;
 
@@ -17,7 +18,7 @@ export function makeNavList(
       key={item.label}
       className={screenSize === "sm" ? "w-full text-center" : ""}
     >
-      <NavLink path={item.path} className={className}>
+      <NavLink path={item.path} className={className} onClick={onClick}>
         {item.label}
       </NavLink>
     </li>

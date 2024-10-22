@@ -69,5 +69,6 @@ export type TNavbarProps = Readonly<{ paths: TPaths }> & TChildrenProps;
 export type TNavLinkProps = Readonly<{
   path: TPath["path"];
   className?: string;
+  onClick?: () => void;
 }> &
   TChildrenProps;
