@@ -2,7 +2,7 @@ import { useViweport } from "@/hooks/useViewport";
 import { useState } from "react";
 import type { TPaths } from "@/lib/types";
 import { makeNavList } from "@/app/(homepage)/_utils/makeNavList";
-import { Wrapper } from "@/components/ui/wrapper";
+import { Container } from "@/components/ui/container";
 import { BurgerButton } from "@/components/ui/burger-button";
 
 type TNavbarProps = {
@@ -20,8 +20,8 @@ export function Navbar({ paths, children }: TNavbarProps) {
   const navListSM = makeNavList(paths, "sm", onCloseMenu);
 
   return (
-    <nav className="relative px-4 py-5 bg-slate-50 sm:sticky sm:top-0 sm:z-10 mb-10 sm:mb-14 xl:mb-20">
-      <Wrapper>
+    <nav className="relative px-4 py-5 sm:sticky sm:top-0 sm:z-10 mb-10 sm:mb-14 xl:mb-20 bg-[#6737B9] text-slate-50">
+      <Container>
         <div className="flex items-center justify-between text-xl">
           {children}
 
@@ -41,7 +41,7 @@ export function Navbar({ paths, children }: TNavbarProps) {
             {navListSM}
           </ul>
         )}
-      </Wrapper>
+      </Container>
     </nav>
   );
 }
