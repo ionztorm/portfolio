@@ -12,8 +12,6 @@ export function Hero() {
       <span className="text-center text-sm">
         with a passion for clean, responsive, data driven interfaces
       </span>
-
-      <span className="font-semibold">using</span>
     </h1>
   );
 }
