@@ -16,7 +16,7 @@ export function SkillList({
             <SkillPill
               skill={skill}
               key={skill.name}
-              className="hover:scale-110 transition duration-300"
+              className="sm:hover:scale-110 transition duration-300"
               variant={variant}
             />
           ))}
