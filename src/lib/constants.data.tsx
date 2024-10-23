@@ -8,14 +8,41 @@ import {
   RiNodejsFill,
   RiCss3Fill,
   RiSupabaseFill,
+  RiGithubFill,
+  RiDiscordFill,
+  RiTwitterXFill,
 } from "react-icons/ri";
 import { BiLogoTypescript, BiLogoGoLang } from "react-icons/bi";
 import { VscJson } from "react-icons/vsc";
-import { SiExpress, SiShadcnui, SiVercel } from "react-icons/si";
+import { SiExpress, SiShadcnui, SiVercel, SiInstagram } from "react-icons/si";
 import { DiSass, DiMongodb, DiPostgresql } from "react-icons/di";
 import { ConvexIcon } from "@/components/icon/convex";
 import { BunIcon } from "@/components/icon/bun";
 import vscodetheme from "@/../../public/vscodetheme.png";
+
+export const LINKS = {
+  homepageNavPaths: {
+    about: { path: "#about", label: "About", icon: "" },
+    projects: { path: "#projects", label: "Projects", icon: "" },
+    skills: { path: "#skills", label: "Skills", icon: "" },
+    contact: { path: "#contact", label: "Contact", icon: "" },
+  },
+  socials: {
+    github: {
+      path: "https://github.com/ionztorm",
+      label: "github",
+      icon: RiGithubFill,
+    },
+    X: { path: "https://x.com/LeonLonsdale", label: "X", icon: RiTwitterXFill },
+    instagram: { path: "", label: "instagram", icon: SiInstagram },
+    discord: {
+      path: "https://discord.gg/jdH8B8AMzr",
+      label: "Discord",
+      icon: RiDiscordFill,
+    },
+  },
+  projectLinks: {},
+} as const;
 
 export const HOMEPAGE_NAV_PATHS = {
   about: { path: "#about", label: "About", icon: "" },
@@ -123,6 +150,7 @@ export const SKILLS = {
     tag: ["hero"],
   },
 } as const;
+
 export const PROJECTS: TProjects = [
   {
     title: "VS Code Theme",

@@ -2,7 +2,7 @@ import type { twScreens } from "@/hooks/useViewport";
 import type { StaticImageData } from "next/image";
 import type { PropsWithChildren } from "react";
 import type { IconType } from "react-icons";
-import type { SKILLS } from "./constants.data";
+import type { LINKS, SKILLS } from "./constants.data";
 
 // react types
 
@@ -13,6 +13,12 @@ export type TChildrenProps = Readonly<PropsWithChildren>;
 export type TScreenSizes = keyof typeof twScreens;
 
 // paths
+
+export type TLinks = typeof LINKS;
+export type TLinksKeys = keyof typeof LINKS;
+export type THomepageNavPaths = typeof LINKS.homepageNavPaths;
+export type TSocialLinks = typeof LINKS.socials;
+export type TProjectLinks = typeof LINKS.projectLinks;
 
 export type TPath = { path: string; label: string; icon?: string };
 export type TPaths = Record<string, TPath>;
@@ -56,9 +62,10 @@ export type TProjectProps = Readonly<{ project: TProject }>;
 
 // navbar
 
-export type TNavbarProps = Readonly<{ paths: TPaths }> & TChildrenProps;
+export type TNavbarProps = Readonly<{ paths: THomepageNavPaths }> &
+  TChildrenProps;
 export type TNavLinkProps = Readonly<{
-  path: TPath["path"];
+  path: THomepageNavPaths[keyof THomepageNavPaths]["path"];
   className?: string;
   onClick?: () => void;
 }> &

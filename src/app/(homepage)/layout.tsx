@@ -2,7 +2,7 @@
 import { Logo } from "@/components/ui/logo";
 import { Footer } from "@/app/(homepage)/_components/_layout/footer";
 import { Navbar } from "@/app/(homepage)/_components/_navigation/navbar";
-import { HOMEPAGE_NAV_PATHS } from "@/lib/constants.data";
+import { LINKS } from "@/lib/constants.data";
 
 type THomepageLayoutProps = {
   children: React.ReactNode;
@@ -10,7 +10,7 @@ type THomepageLayoutProps = {
 export default function HomepageLayout({ children }: THomepageLayoutProps) {
   return (
     <>
-      <Navbar paths={HOMEPAGE_NAV_PATHS}>
+      <Navbar paths={LINKS.homepageNavPaths}>
         <Logo title="Leon Lonsdale" />
       </Navbar>
       {children}

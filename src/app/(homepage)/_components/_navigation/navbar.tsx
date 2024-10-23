@@ -1,14 +1,9 @@
 import { useViweport } from "@/hooks/useViewport";
 import { useState } from "react";
-import type { TPaths } from "@/lib/types";
+import type { TNavbarProps } from "@/lib/types";
 import { makeNavList } from "@/app/(homepage)/_utils/makeNavList";
 import { Container } from "@/components/ui/container";
 import { BurgerButton } from "@/components/ui/burger-button";
-
-type TNavbarProps = {
-  children: React.ReactNode;
-  paths: TPaths;
-};
 
 export function Navbar({ paths, children }: TNavbarProps) {
   const [isOpen, setIsOpen] = useState(false);

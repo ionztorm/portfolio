@@ -1,8 +1,8 @@
 import { NavLink } from "@/app/(homepage)/_components/_navigation/nav-link";
-import type { TPaths, TScreenSizes } from "@/lib/types";
+import type { THomepageNavPaths, TScreenSizes } from "@/lib/types";
 
 export function makeNavList(
-  pathList: TPaths,
+  pathList: THomepageNavPaths,
   screenSize: TScreenSizes,
   onClick?: () => void
 ): React.ReactElement<"li">[] | null {
