@@ -2,6 +2,7 @@ import type { twScreens } from "@/hooks/useViewport";
 import type { StaticImageData } from "next/image";
 import type { PropsWithChildren } from "react";
 import type { IconType } from "react-icons";
+import type { SKILLS } from "./constants.data";
 
 // react types
 
@@ -18,13 +19,16 @@ export type TPaths = Record<string, TPath>;
 
 // skills
 
+export type TSkillsKey = keyof typeof SKILLS;
+export type TSkills = typeof SKILLS;
+
 export type TSkill = {
   name: string;
   icon?: IconType;
   brandColour?: string;
-  tag?: string[];
+  tag?: readonly string[];
 };
-export type TSkills = Record<string, TSkill>;
+
 export type TSkillPillProps = Readonly<{
   skill: TSkill;
   className?: string;
@@ -44,7 +48,7 @@ export type TProject = {
   title: string;
   image: StaticImageData;
   overview: string;
-  skills: TSkills;
+  skills: Partial<Record<TSkillsKey, TSkill>>;
   links?: TPaths;
 };
 export type TProjects = TProject[];
@@ -62,8 +66,6 @@ export type TNavLinkProps = Readonly<{
 
 // layout components
 
-// export type THeaderProps = Readonly<{ className?: string }>;
-// export type TFooterProps = Readonly<{ className?: string }>;
 export type TMainProps = TChildrenProps;
 
 export type TSectionHeadingProps = TChildrenProps;
@@ -74,7 +76,7 @@ export type TSectionProps = Readonly<{
 }> &
   TChildrenProps;
 
-export type TWrapperProps = Readonly<{ className?: string }> & TChildrenProps;
+export type TComponentProps = Readonly<{ className?: string }> & TChildrenProps;
 
 // ui component props
 

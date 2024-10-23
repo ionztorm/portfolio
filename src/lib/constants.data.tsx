@@ -1,4 +1,4 @@
-import type { TPaths, TProjects, TSkills } from "./types";
+import type { TPaths, TProjects } from "./types";
 import {
   RiJavascriptFill,
   RiHtml5Fill,
@@ -17,12 +17,12 @@ import { ConvexIcon } from "@/components/icon/convex";
 import { BunIcon } from "@/components/icon/bun";
 import vscodetheme from "@/../../public/vscodetheme.png";
 
-export const HOMEPAGE_NAV_PATHS: TPaths = {
+export const HOMEPAGE_NAV_PATHS = {
   about: { path: "#about", label: "About", icon: "" },
   projects: { path: "#projects", label: "Projects", icon: "" },
   skills: { path: "#skills", label: "Skills", icon: "" },
   contact: { path: "#contact", label: "Contact", icon: "" },
-};
+} as const;
 
 export const SOCIAL_LINKS: TPaths = {
   github: { path: "https://github.com/ionztorm", label: "github", icon: "" },
@@ -31,7 +31,7 @@ export const SOCIAL_LINKS: TPaths = {
   discord: { path: "", label: "Discord", icon: "" },
 };
 
-export const SKILLS: TSkills = {
+export const SKILLS = {
   html: {
     name: "HTML5",
     icon: RiHtml5Fill,
@@ -122,7 +122,7 @@ export const SKILLS: TSkills = {
     brandColour: "#000000",
     tag: ["hero"],
   },
-};
+} as const;
 export const PROJECTS: TProjects = [
   {
     title: "VS Code Theme",
