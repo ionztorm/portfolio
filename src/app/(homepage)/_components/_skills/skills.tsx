@@ -9,7 +9,7 @@ export function Skills() {
 
       <SkillList
         variant="skills"
-        className="flex items-center justify-between w-full gap-2 md:gap-6 flex-wrap py-4"
+        className="flex items-center justify-center sm:justify-between w-full gap-5 md:gap-6 flex-wrap py-4"
         skills={SKILLS}
       />
     </>
