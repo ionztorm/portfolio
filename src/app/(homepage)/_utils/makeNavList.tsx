@@ -1,4 +1,4 @@
-import { NavLink } from "@/components/layout/nav-link";
+import { NavLink } from "@/app/(homepage)/_components/_navigation/nav-link";
 import type { TPaths, TScreenSizes } from "@/lib/types";
 
 export function makeNavList(

@@ -1,9 +1,9 @@
 import { useViweport } from "@/hooks/useViewport";
 import { useState } from "react";
 import type { TPaths } from "@/lib/types";
-import { makeNavList } from "@/utils/makeNavList";
-import { Wrapper } from "../ui/wrapper";
-import { BurgerButton } from "../ui/burger-button";
+import { makeNavList } from "@/app/(homepage)/_utils/makeNavList";
+import { Wrapper } from "@/components/ui/wrapper";
+import { BurgerButton } from "@/components/ui/burger-button";
 
 type TNavbarProps = {
   children: React.ReactNode;

@@ -15,7 +15,7 @@ export function SkillPill({
       projects: "size-4",
     },
     pillShape: {
-      hero: "flex items-center flex-shrink-0 border rounded-full max-w-max gap-2 px-3 py-2",
+      hero: "flex items-center flex-shrink-0 border rounded-full max-w-max gap-2 px-3 py-2 bg-white shadow-sm",
       skills:
         "flex flex-col items-center flex-shrink-0 border rounded-2xl gap-2  px-2 py-4 shadow-md bg-white min-w-36 aspect-square",
       projects:

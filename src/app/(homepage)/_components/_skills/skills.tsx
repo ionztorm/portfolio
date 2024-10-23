@@ -1,5 +1,5 @@
 import { SectionHeading } from "@/components/ui/section-heading";
-import { SkillList } from "@/components/ui/skill-list";
+import { SkillList } from "@/app/(homepage)/_components/_ui/skill-list";
 import { SKILLS } from "@/lib/constants.data";
 
 export function Skills() {
@@ -9,7 +9,7 @@ export function Skills() {
 
       <SkillList
         variant="skills"
-        className="mx-auto flex items-center justify-center gap-2 md:gap-5 flex-wrap py-4"
+        className="flex items-center justify-between w-full gap-2 md:gap-6 flex-wrap py-4"
         skills={SKILLS}
       />
     </>

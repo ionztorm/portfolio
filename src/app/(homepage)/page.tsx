@@ -1,17 +1,17 @@
 "use client";
-import { Header } from "@/components/layout/header";
-import { Main } from "@/components/layout/main";
+import { Header } from "@/app/(homepage)/_components/_layout/header";
+import { Main } from "@/app/(homepage)/_components/_layout/main";
 
 import { Projects } from "@/app/(homepage)/_components/_projects/projects";
 
 import { Section } from "@/components/ui/section";
-import { Skills } from "./_components/_skills/skills";
+import { Skills } from "@/app/(homepage)//_components/_skills/skills";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[auto_1fr]">
-      <Header className="px-4 mb-10 sm:mb-14 xl:mb-20" />
-      <Main className="px-4">
+      <Header />
+      <Main>
         <Section id="projects">
           <Projects />
         </Section>

@@ -1,4 +1,4 @@
-import { SkillList } from "@/components/ui/skill-list";
+import { SkillList } from "@/app/(homepage)/_components/_ui/skill-list";
 import { StyledLink } from "@/components/ui/styled-link";
 import type { TProjectProps } from "@/lib/types";
 import Image from "next/image";

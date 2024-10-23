@@ -62,9 +62,9 @@ export type TNavLinkProps = Readonly<{
 
 // layout components
 
-export type THeaderProps = Readonly<{ className?: string }>;
-export type TFooterProps = Readonly<{ className?: string }>;
-export type TMainProps = Readonly<{ className?: string }> & TChildrenProps;
+// export type THeaderProps = Readonly<{ className?: string }>;
+// export type TFooterProps = Readonly<{ className?: string }>;
+export type TMainProps = TChildrenProps;
 
 export type TSectionHeadingProps = TChildrenProps;
 export type TSectionProps = Readonly<{
