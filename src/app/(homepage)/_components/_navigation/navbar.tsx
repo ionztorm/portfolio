@@ -20,7 +20,7 @@ export function Navbar({ paths, children }: TNavbarProps) {
   const navListSM = makeNavList(paths, "sm", onCloseMenu);
 
   return (
-    <nav className="relative px-4 py-5 sm:sticky sm:top-0 sm:z-10 mb-10 sm:mb-14 xl:mb-20 bg-[#6737B9] text-slate-50">
+    <nav className="px-4 py-5 sticky top-0 z-10 mb-10 sm:mb-14 xl:mb-20 bg-[#6737B9] text-slate-50">
       <Container>
         <div className="flex items-center justify-between text-xl">
           {children}
@@ -37,7 +37,7 @@ export function Navbar({ paths, children }: TNavbarProps) {
         </div>
         {/* mobile menu */}
         {isMobile && isOpen && (
-          <ul className="sm:hidden absolute w-full mt-4 flex flex-col items-center gap-8 rounded-sm shadow-lg p-5 z-10 bg-white">
+          <ul className="sm:hidden fixed inset-0 flex flex-col items-center justify-center gap-8 rounded-sm shadow-lg p-5 z-10 bg-white text-slate-700">
             {navListSM}
           </ul>
         )}
