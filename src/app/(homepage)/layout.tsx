@@ -1,12 +1,12 @@
 "use client";
 import { Logo } from "@/components/ui/logo";
-import { Footer } from "@/app/(homepage)/_components/_layout/footer";
-import { Navbar } from "@/app/(homepage)/_components/_navigation/navbar";
+import { Footer } from "@/components/layout/footer";
+import { Navbar } from "@/components/layout/navbar";
 import { LINKS } from "@/lib/constants.data";
 
-type THomepageLayoutProps = {
+type THomepageLayoutProps = Readonly<{
   children: React.ReactNode;
-};
+}>;
 export default function HomepageLayout({ children }: THomepageLayoutProps) {
   return (
     <>

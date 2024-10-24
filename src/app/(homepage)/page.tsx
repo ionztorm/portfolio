@@ -1,6 +1,6 @@
 "use client";
 import { Header } from "@/app/(homepage)/_components/_layout/header";
-import { Main } from "@/app/(homepage)/_components/_layout/main";
+import { Main } from "@/components/layout/main";
 
 import { Projects } from "@/app/(homepage)/_components/_projects/projects";
 
