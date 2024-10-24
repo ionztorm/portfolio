@@ -19,10 +19,8 @@ export function useViweport(breakpoint: TScreenSizes) {
 
   useEffect(() => {
     const handleResize = () => {
-      const bpVal = breakpoints[breakpoint];
-
-      if (bpVal !== undefined) setIsMobile(window.innerWidth < bpVal);
-      if (!bpVal) console.warn(`${breakpoint} is not defined`);
+      if (breakpoints[breakpoint] !== undefined)
+        setIsMobile(window.innerWidth < breakpoints[breakpoint]);
     };
 
     handleResize();
