@@ -44,7 +44,7 @@ export type TSkillPillVariant = "skills" | "projects" | "hero";
 export type TSkillListProps = {
   variant: TSkillPillVariant;
   className: string;
-  skills: TSkills;
+  skills: Partial<Record<TSkillsKey, TSkill>>;
   tag?: string;
 };
 
