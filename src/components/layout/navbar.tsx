@@ -14,6 +14,8 @@ export function Navbar({ paths, children }: TNavbarProps) {
   const navListLG = makeNavList(paths, "lg");
   const navListSM = makeNavList(paths, "sm", onCloseMenu);
 
+  console.log(isMobile);
+
   return (
     <nav className="px-4 py-5 sticky top-0 z-10 mb-10 sm:mb-14 xl:mb-20 bg-[#6737B9] text-slate-50">
       <Container>
@@ -22,7 +24,7 @@ export function Navbar({ paths, children }: TNavbarProps) {
 
           {/* md+ menu */}
           {!isMobile && (
-            <ul className="hidden sm:flex sm:gap-5 md:gap-12 lg:gap-20 ">
+            <ul className="hidden sm:flex sm:gap-3 md:gap-10 lg:gap-20 ">
               {navListLG}
             </ul>
           )}
