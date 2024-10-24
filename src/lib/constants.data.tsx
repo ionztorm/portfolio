@@ -42,6 +42,13 @@ export const LINKS = {
     },
   },
   projectLinks: {},
+  cvNavPaths: {
+    profile: { path: "#profile", label: "Profile" },
+    experience: { path: "#experience", label: "Experience" },
+    education: { path: "#education", label: "Education" },
+    skills: { path: "#skills", label: "Skills" },
+    // portfolio: { path: "/", label: "Back to Portfolio" },
+  },
 } as const;
 
 export const HOMEPAGE_NAV_PATHS = {
