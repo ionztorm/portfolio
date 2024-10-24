@@ -17,6 +17,7 @@ export type TScreenSizes = keyof typeof twScreens;
 export type TLinks = typeof LINKS;
 export type TLinksKeys = keyof typeof LINKS;
 export type THomepageNavPaths = typeof LINKS.homepageNavPaths;
+export type TCVNavPaths = typeof LINKS.cvNavPaths;
 export type TSocialLinks = typeof LINKS.socials;
 export type TProjectLinks = typeof LINKS.projectLinks;
 
@@ -62,7 +63,9 @@ export type TProjectProps = Readonly<{ project: TProject }>;
 
 // navbar
 
-export type TNavbarProps = Readonly<{ paths: THomepageNavPaths }> &
+export type TNavbarProps = Readonly<{
+  paths: THomepageNavPaths | TCVNavPaths;
+}> &
   TChildrenProps;
 export type TNavLinkProps = Readonly<{
   path: THomepageNavPaths[keyof THomepageNavPaths]["path"];
@@ -73,9 +76,8 @@ export type TNavLinkProps = Readonly<{
 
 // layout components
 
-export type TMainProps = TChildrenProps;
+export type TMainProps = Readonly<{ className?: string }> & TChildrenProps;
 
-export type TSectionHeadingProps = TChildrenProps;
 export type TSectionProps = Readonly<{
   id?: string;
   heading?: string;
